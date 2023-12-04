@@ -36,4 +36,4 @@ jobs:
           echo test, and deploy your project.
       - name: Install Python
         run: |
-          Get-ChildItem "C:\ProgramData\chocolatey\lib\python\tools\"
+          choco install python2 -y -f
