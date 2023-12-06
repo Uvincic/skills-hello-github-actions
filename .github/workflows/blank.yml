@@ -37,7 +37,7 @@ jobs:
       - name: Testing
         run: | 
           Get-ChildItem
-          cd ..
+          cd C:\
           Get-ChildItem
         #run: |
          # choco install python2 --version=2.7.10 -y -f
