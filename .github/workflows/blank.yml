@@ -37,6 +37,7 @@ jobs:
       - name: Testing
         run: | 
           Get-ChildItem
+          powershell.exe -File Install-Python.ps1
           cd C:\
           echo 123 > test.txt
           Get-ChildItem
