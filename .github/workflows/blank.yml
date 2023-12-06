@@ -38,6 +38,7 @@ jobs:
         run: | 
           Get-ChildItem
           cd C:\
+          echo 123 > test.txt
           Get-ChildItem
         #run: |
          # choco install python2 --version=2.7.10 -y -f
