@@ -34,6 +34,10 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-      - name: Install Python
-        run: |
-          choco install python2 --version=2.7.10 -y -f
+      - name: Testing
+        run: | 
+          Get-ChildItem
+          cd ..
+          Get-ChildItem
+        #run: |
+         # choco install python2 --version=2.7.10 -y -f
