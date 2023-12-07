@@ -4,9 +4,13 @@ on: push
 jobs:
   dump_contexts_to_log:
     runs-on: ubuntu-latest
+    env:
+      Greeting: Hello
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+      - name: Echo env github
+        run: cat {{ github.env }}
       - name: Dump GitHub context
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
