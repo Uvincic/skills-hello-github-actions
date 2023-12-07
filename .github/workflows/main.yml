@@ -8,7 +8,7 @@ jobs:
     env:
       Greeting: Hello
     steps:
-      - run: echo ${{ fromJSON('["ubuntu", "windwos"]') }}
+      - run: echo ${{ fromJSON('["ubuntu", "windwos"]')[0] }}
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Echo env github
