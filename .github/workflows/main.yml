@@ -3,10 +3,12 @@ on: push
 
 jobs:
   dump_contexts_to_log:
+    environment: Uros
     runs-on: ubuntu-latest
     env:
       Greeting: Hello
     steps:
+      - run: echo $MyVar
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Echo env github
