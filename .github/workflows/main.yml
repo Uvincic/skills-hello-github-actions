@@ -7,9 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       Greeting: Hello
-      proba: ${{ fromJSON('["ubuntu", "windwos"]') }}
     steps:
-      - run: echo ${{ env.proba }}
+      - run: echo ${{ fromJSON('["ubuntu", "windwos"]') }}
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Echo env github
