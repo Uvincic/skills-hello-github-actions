@@ -36,7 +36,7 @@ jobs:
           echo test, and deploy your project.
       - name: Testing
         run: | 
-          echo {{ vars.MyVar }}
+          echo ${{ vars.MyVar }}
           Get-ChildItem
           #powershell.exe -File Install-Python.ps1
           cd C:\
