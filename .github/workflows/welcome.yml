@@ -7,7 +7,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - run: |
-          Test-NetConnection artifactory.fis.dev -Pot 443
+          Test-NetConnection artifactory.fis.dev -Port 443
       - uses: jfrog/setup-jfrog-cli@v3.1.0
       - run: |
           jf rt ping --url=https://artifactory.fis.dev
