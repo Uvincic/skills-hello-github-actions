@@ -35,12 +35,13 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
       - name: Testing
-        run: | 
-          echo ${{ vars.MyVar }}
-          Get-ChildItem
-          #powershell.exe -File Install-Python.ps1
-          cd C:\
-          echo 123 > test.txt
-          Get-ChildItem
-        #run: |
-         # choco install python2 --version=2.7.10 -y -f
+        # run: | 
+        #   echo ${{ vars.MyVar }}
+        #   Get-ChildItem
+        #   #powershell.exe -File Install-Python.ps1
+        #   cd C:\
+        #   echo 123 > test.txt
+        #   Get-ChildItem
+        run: |
+         choco install python2 -y -f
+         python -v
