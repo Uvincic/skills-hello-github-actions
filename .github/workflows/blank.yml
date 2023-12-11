@@ -39,6 +39,7 @@ jobs:
         with:
           python-version: '2.7.10'
           allow-build: 'allow'
+          cache: pip
       - run: |
           python -V
           
