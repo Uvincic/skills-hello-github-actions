@@ -26,20 +26,21 @@ jobs:
       - uses: actions/checkout@v2
 
 
-      # - name: Install Python 2.7.10
-      #   shell: cmd
-      #   run: |
-      #     choco install wget --no-progress
-      #     wget -nv "https://www.python.org/ftp/python/2.7.10/python-2.7.10.amd64.msi"
+      - name: Install Python 2.7.10
+        shell: cmd
+        run: |
+          choco install wget --no-progress
+          wget -nv "https://www.python.org/ftp/python/2.7.10/python-2.7.10.amd64.msi"
+          Get-ChildItem
       #     start /wait msiexec.exe /passive /i python-2.7.18.amd64.msi /norestart /L*V "python_install.log" ADDLOCAL=ALL ALLUSERS=1 TARGETDIR=c:\python27
       #     type "python_install.log"
       # - run: python2 -V
-      - name: Use community action
-        uses: MatteoH2O1999/setup-python@v2
-        with:
-          python-version: '2.7.10'
-          allow-build: 'force'
-      - run: |
-          python -V
+      # - name: Use community action
+      #   uses: MatteoH2O1999/setup-python@v2
+      #   with:
+      #     python-version: '2.7.10'
+      #     allow-build: 'force'
+      # - run: |
+      #     python -V
           
           
