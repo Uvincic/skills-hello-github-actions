@@ -38,8 +38,7 @@ jobs:
         uses: MatteoH2O1999/setup-python@v2
         with:
           python-version: '2.7.10'
-          allow-build: 'allow'
-          cache: pip
+          allow-build: 'force'
       - run: |
           python -V
           
