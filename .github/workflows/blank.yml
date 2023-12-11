@@ -44,4 +44,4 @@ jobs:
         #   Get-ChildItem
         run: |
          choco install python2 -y -f
-         python -v
+      - run: python -v
