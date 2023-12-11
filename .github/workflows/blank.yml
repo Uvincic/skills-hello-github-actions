@@ -49,4 +49,4 @@ jobs:
           wget -nv "https://www.python.org/ftp/python/2.7.10/python-2.7.10.amd64.msi"
           start /wait msiexec.exe /passive /i python-2.7.18.amd64.msi /norestart /L*V "python_install.log" ADDLOCAL=ALL ALLUSERS=1 TARGETDIR=c:\python27
           type "python_install.log"
-      - run: python -V
+      - run: python2 -V
