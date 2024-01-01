@@ -10,7 +10,7 @@ jobs:
     steps:
       - run: echo ${{ fromJSON('["ubuntu", "windwos"]')[0] }}
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Echo env github
         run: cat ${{ github.env }}
       - name: Dump GitHub context
